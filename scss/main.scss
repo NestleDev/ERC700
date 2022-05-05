@@ -1,0 +1,18 @@
+@import './vars.scss';
+@import url($font-url);
+@import './base/base.scss';
+
+
+//components
+@import './components/header.scss';
+@import './components/socials.scss';
+@import './components/promo-content.scss';
+@import './components/promo.scss';
+@import './components/button.scss';
+@import './components/about.scss';
+@import './components/title.scss';
+@import './components/join-section.scss';
+@import './components/join.scss';
+@import './components/questions.scss';
+@import './components/question.scss';
+@import './components/footer.scss';

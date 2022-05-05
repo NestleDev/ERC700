@@ -1,0 +1,29 @@
+.button {
+    background: $accent-color;
+    border-radius: 8.65574px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19.4754px;
+    line-height: 23px;
+    padding: 21.64px 40px 21.36px 40px;
+    width: 100%;
+    max-width: 283.48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--icon--discord {
+        &::before {
+            content: '';
+            display: flex;
+            width: 20.29px;
+            height: 16.23px;
+            background-image: url('../images/discord.svg');
+            background-size: contain;
+            margin-right: 8.93px;
+        }
+    }
+
+    &--wide {
+        max-width: 332px;
+    }
+}

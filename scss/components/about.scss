@@ -1,0 +1,30 @@
+.about {
+    padding: 82.4px 0 75.37px 0;
+
+    &__container {
+        display: flex;
+    }
+
+    &__pic {
+        min-width: 572.49px;
+    }
+
+    &__content {
+        margin-left: 57.45px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: 300;
+        margin-bottom: 17px;
+
+        &--mb--24 {
+            margin-bottom: 24px;
+        }
+    }
+}

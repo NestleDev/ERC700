@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0 78.28px 0;
+
+    &__logo {
+        width: 287.57px;
+        height: 91px;
+        margin-bottom: 38px;
+    }
+}

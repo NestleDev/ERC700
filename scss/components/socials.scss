@@ -1,0 +1,17 @@
+.socials{
+    &__list{
+        display: flex;
+    }
+    &__item:not(:first-child){
+        margin-left: 5px;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48.32px;
+        height: 48.75px;
+        border: 0.696375px solid $color-grey;
+        border-radius: 11.142px;
+    }
+}
