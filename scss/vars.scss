@@ -1,11 +1,13 @@
 $base-size: 16px;
 $base-line: 24px;
 $base-font: 'Poppins',
-sans-serif;
+    sans-serif;
 $base-weight: 400;
 $font-url: 'https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,300;0,400;0,700;1,300&family=Roboto&display=swap';
 $container-size: 1270px;
-$container-padding: 20px;
+$container-padding: 30px;
+
+
 
 //colors
 $bg-color: #000;
@@ -13,3 +15,4 @@ $base-color: #fff;
 $color-grey: #808080;
 $accent-color: #6183DD;
 $grey-text: #E8E8E8;
+$black-text: #000;

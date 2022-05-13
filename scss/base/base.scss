@@ -78,6 +78,10 @@ strong {
     width: 100%;
     padding: 0 $container-padding;
 
+    @include tablets {
+        padding: 0 20px;
+    }
+
     &--small {
         max-width: 1056px;
     }

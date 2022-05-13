@@ -1,11 +1,17 @@
-.socials{
-    &__list{
+.socials {
+    &__list {
         display: flex;
     }
-    &__item:not(:first-child){
+
+    &__item:not(:first-child) {
         margin-left: 5px;
+
+        @include phones {
+            margin-left: 4px;
+        }
     }
-    &__link{
+
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,5 +19,11 @@
         height: 48.75px;
         border: 0.696375px solid $color-grey;
         border-radius: 11.142px;
+
+        @include phones {
+            width: 35px;
+            height: 35px;
+            padding: 10px;
+        }
     }
 }

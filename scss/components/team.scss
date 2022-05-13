@@ -1,0 +1,66 @@
+.team {
+    padding: 52.5px 0 78.5px 0;
+
+    @include laptops {
+        padding: 88px 0 59px 0;
+    }
+
+    @include tablets {
+        padding: 21px 0 26.5px 0;
+    }
+
+    @include phones {
+        padding: 35px 0 43.5px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include phones {
+            padding: 0 50px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 69px;
+
+        @include laptops {
+            margin-bottom: 36.28px;
+        }
+
+        @include tablets {
+            margin-bottom: 76px;
+        }
+
+        @include phones {
+            margin-bottom: 11px;
+        }
+    }
+
+    &__carousel {
+        width: 100%;
+        position: relative;
+    }
+
+    &__nav {
+        position: absolute;
+        top: 153px;
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &--left {
+            right: calc(100% + 46px);
+            background-image: url('../images/left.svg');
+        }
+
+        &--right {
+            left: calc(100% + 46px);
+            background-image: url('../images/right.svg');
+        }
+    }
+}

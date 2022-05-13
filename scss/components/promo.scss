@@ -8,6 +8,11 @@
         top: 83px;
         left: 28px;
         z-index: -1;
+
+        @include phones {
+            left: 0;
+            top: 0;
+        }
     }
 
     &__shadow {

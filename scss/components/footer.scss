@@ -4,9 +4,31 @@
     align-items: center;
     padding: 35px 0 78.28px 0;
 
+    @include laptops {
+        padding: 28.5px 0 65.28px 0;
+    }
+
+    @include tablets {
+        padding: 27.5px 0 147px 0;
+    }
+
+    @include phones {
+        padding: 19.5px 0 68px 0;
+    }
+
     &__logo {
         width: 287.57px;
         height: 91px;
         margin-bottom: 38px;
+
+        @include laptops {
+            width: 182.39px;
+            height: 57.72px;
+        }
+
+        @include phones {
+            width: 101px;
+            height: 32.52px;
+        }
     }
 }

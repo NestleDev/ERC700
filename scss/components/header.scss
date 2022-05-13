@@ -7,6 +7,18 @@
     width: 100%;
     z-index: 9999;
 
+    @include laptops {
+        padding: 26px 0;
+    }
+
+    @include tablets {
+        padding: 20px 0;
+    }
+
+    @include phones {
+        padding: 22px 0;
+    }
+
     &__logo {
         width: 101.12px;
         height: 32px;

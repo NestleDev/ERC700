@@ -1,0 +1,126 @@
+.roadmap {
+    padding: 78.37px 0 52.5px 0;
+
+    @include laptops {
+        padding: 50px 0 68px 0;
+    }
+
+    @include tablets {
+        padding: 51.5px 0 21px 0;
+    }
+
+    @include phones {
+        padding: 66.5px 0 35px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: initial;
+    }
+
+    &__wrap {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+
+        &--first {
+            max-width: 1275px;
+        }
+
+        &--second {
+            max-width: 1327px;
+        }
+
+        &--third {
+            max-width: 1390px;
+        }
+
+        &--fourth {
+            max-width: 1388px;
+        }
+    }
+
+    &__title {
+        padding-left: 35px;
+        font-size: 160px;
+        line-height: 241px;
+        position: relative;
+        margin-bottom: 226px;
+
+        @include laptops {
+            margin-bottom: 84px;
+        }
+
+        &::before {
+            content: url('../images/fasion.svg');
+            display: flex;
+            position: absolute;
+            bottom: -23px;
+            right: -49px;
+            width: 161px;
+            height: 157px;
+        }
+    }
+
+    &__list {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 0.9px;
+            background: $base-color;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__checkpoint {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 31px;
+        height: 31px;
+        background: #000;
+        border: 3px solid $base-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before {
+            content: '';
+            display: flex;
+            width: 15px;
+            height: 15px;
+            background: $base-color;
+            border-radius: 50%;
+        }
+
+        &--start {
+            width: 21px;
+            height: 21px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &--end {
+            width: 29px;
+            height: 29px;
+            background: $base-color;
+        }
+    }
+}

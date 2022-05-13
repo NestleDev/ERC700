@@ -1,27 +1,99 @@
 .about {
-    padding: 82.4px 0 75.37px 0;
+    padding: 81.4px 0 75.37px 0;
+
+    @include laptops {
+        padding: 60px 0 50px 0;
+    }
+
+    @include tablets {
+        padding: 35px 0 51.5px 0;
+    }
+
+    @include phones {
+        padding: 44px 0 66.5px 0;
+    }
 
     &__container {
+        max-width: 1162px;
+
+        @include tablets {
+            padding: 0 24px 0 0;
+        }
+
+        @include phones {
+            padding: 0;
+        }
+    }
+
+    &__content-wrap {
         display: flex;
+
+        @include phones {
+            flex-direction: column;
+        }
     }
 
     &__pic {
-        min-width: 572.49px;
+        flex: 1;
+
+        @include phones {
+            margin-bottom: 22.5px;
+        }
     }
 
     &__content {
-        margin-left: 57.45px;
+        flex: 1;
+        padding-top: 15px;
+        margin-left: 62.45px;
+
+        @include laptops {
+            margin-left: 8.8px;
+        }
+
+        @include phones {
+            margin-left: 0;
+            padding: 0 20px;
+        }
     }
 
     &__title {
         font-size: 48px;
         line-height: 72px;
         margin-bottom: 24px;
+
+        @include laptops {
+            margin-bottom: 14px;
+        }
+
+        @include tablets {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+
+            @include tablets {
+                display: flex;
+                justify-content: center;
+                font-size: 40px;
+                line-height: 60px;
+                margin-bottom: 16px;
+            }
+
+            @include phones {
+                margin-bottom: 27px;
+            }
+        }
     }
 
     &__text {
         font-weight: 300;
         margin-bottom: 17px;
+        color: $grey-text;
+
+        strong {
+            color: $base-color;
+        }
 
         &--mb--24 {
             margin-bottom: 24px;

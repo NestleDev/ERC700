@@ -1,6 +1,18 @@
 .questions {
     padding: 50px 0 35px 0;
 
+    @include laptops {
+        padding: 50px 0 26.5px 0;
+    }
+
+    @include tablets {
+        padding: 25px 0 27.5px 0;
+    }
+
+    @include phones {
+        padding: 34.5px 0 19.5px;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -11,9 +23,24 @@
         font-size: 54px;
         line-height: 81px;
         margin-bottom: 54px;
+
+        @include tablets {
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        @include phones {
+            margin-bottom: 20px;
+        }
     }
 
     &__item:not(:last-child) {
         margin-bottom: 11px;
+
+        @include phones {
+            margin-bottom: 6px;
+        }
     }
 }

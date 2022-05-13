@@ -1,0 +1,53 @@
+.info-card {
+    &__pic {
+        margin-bottom: 20px;
+
+        @include tablets {
+            margin-bottom: 13px;
+        }
+
+        @include phones {
+            margin-bottom: 19px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__subtitle {
+        display: flex;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 9px;
+
+        @include tablets {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 26px;
+        }
+
+        @include phones {
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-style: italic;
+
+        @include tablets {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        @include phones {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

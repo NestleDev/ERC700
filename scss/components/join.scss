@@ -1,9 +1,46 @@
 .join {
-    padding: 49px 59px 67px 45px;
     border-radius: 25px;
     border: 1px solid;
-    background: url('../images/discord.png') top 0 right 59px / contain, linear-gradient(168.28deg, #1B1B1B 1.07%, #0D0D0D 98.86%);
-    background-repeat: no-repeat;
+    background: linear-gradient(168.28deg, #1B1B1B 1.07%, #0D0D0D 98.86%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 59px;
+
+    @include laptops {
+        padding-right: 37px;
+    }
+
+    @include tablets {
+        padding-right: 14px;
+    }
+
+    @include phones {
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+
+    &__content {
+        flex: 1.2;
+        padding: 49px 0 67px 45px;
+
+        @include laptops {
+            padding: 40px 0 37px 36px;
+        }
+
+        @include tablets {
+            padding: 29px 0 36px 25px;
+        }
+
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: initial;
+            padding: 10px 15px 50px 15px;
+            text-align: center;
+        }
+    }
 
     &__title {
         font-size: 54px;
@@ -13,15 +50,44 @@
         span {
             color: $accent-color;
         }
+
+        @include tablets {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        @include phones {
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 4px;
+        }
     }
 
     &__subtitle {
-        display: flex;
         font-weight: 300;
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 28px;
         max-width: 504px;
         color: $grey-text;
+
+        span {
+            @include phones {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__pic {
+        flex: 0.8;
+
+        @include phones {
+            flex: initial;
+            max-width: 230px;
+        }
+    }
+
+    &__img {
+        width: 100%;
     }
 }

@@ -6,20 +6,38 @@
     border: 1px solid;
     border-color: linear-gradient(163.73deg, #7E96B1 1.63%, #FFE6FC 23.89%, #37365E 46.66%, #4D4D4D 98.77%);
 
+    @include phones {
+        padding: 27px 14px;
+    }
+
     &__title {
         font-size: 20px;
         line-height: 30px;
+
+        @include tablets {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        @include phones {
+            max-width: 248px;
+        }
     }
 
     &__answer-wrap {
         height: 0;
         overflow: hidden;
+        transition: .5s ease;
     }
 
     &__answer {
         font-weight: 300;
         line-height: 23px;
         padding-top: 15px;
+
+        @include phones {
+            padding-top: 18px;
+        }
     }
 
     &__trigger {
@@ -36,11 +54,27 @@
         border: 1px solid;
         border-color: linear-gradient(163.73deg, #7E96B1 1.63%, #FFE6FC 23.89%, #37365E 46.66%, #4D4D4D 98.77%);
 
+        @include phones {
+            width: 40px;
+            height: 38px;
+        }
+
         &::before {
             content: '+';
             font-family: 'Roboto', sans-serif;
             font-size: 18.9989px;
             line-height: 22px;
+
+            @include phones {
+                font-size: 14.4762px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    &.active {
+        .question__trigger::before {
+            content: '-';
         }
     }
 }

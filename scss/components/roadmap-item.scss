@@ -1,0 +1,93 @@
+.roadmap-item {
+    display: flex;
+
+    &__info {
+        &--first {
+            margin-left: 162px;
+            margin-top: 5px;
+        }
+
+        &--second {
+            max-width: 576px;
+            margin-top: 86px;
+            margin-left: 44px;
+        }
+
+        &--third {
+            max-width: 560px;
+            margin-left: 74px;
+            margin-top: 141px;
+        }
+
+        &--fourth {
+            max-width: 516px;
+            margin-top: 290px;
+            margin-left: 73px;
+        }
+    }
+
+    &__pic {
+        &--first {
+            margin-top: 3px;
+        }
+
+        &--second {
+            margin-left: 131px;
+        }
+
+        &--third {
+            margin-left: 111px;
+            padding-top: 142px;
+        }
+
+        &--fourth {
+            margin-left: 120px;
+            padding-top: 240px;
+        }
+
+    }
+
+    &__stage {
+        display: inline-flex;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+        background: #fff;
+        border-radius: 0px 16px 16px 16px;
+        padding: 0 12px 1px 9px;
+        margin-bottom: 18px;
+        margin-left: -7px;
+
+        &--second {
+            padding: 0 19px 1px 12px;
+            margin-left: 0;
+        }
+
+        &--third {
+            padding: 0 20px 1px 11px;
+            margin-left: 0;
+        }
+
+        &--fourth {
+            padding: 0 20px 1px 14px;
+            margin-left: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        max-width: 571px;
+        font-weight: 300;
+    }
+
+    &__btn {
+        margin-top: 30px;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
