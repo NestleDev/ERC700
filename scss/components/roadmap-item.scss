@@ -5,6 +5,15 @@
     grid-column-gap: 50px;
     width: 100%;
 
+    @include tablets {
+        grid-column-gap: 40px;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__info {
         justify-self: end;
 
@@ -31,6 +40,16 @@
             margin-right: 11%;
             margin-top: 28px;
         }
+
+        @include tablets {
+            order: 1;
+            margin: 0;
+            padding-left: 25px;
+        }
+
+        @include phones {
+            padding-left: 0;
+        }
     }
 
     &__pic {
@@ -39,15 +58,39 @@
         &--first {
             justify-self: end;
             margin-right: 12%;
+
+            @include phones {
+                margin-bottom: 7px;
+            }
         }
 
         &--second {
             margin-left: 3%;
+
+            @include phones {
+                margin-bottom: 25px;
+            }
         }
 
         &--third {
             margin-left: 5%;
             margin-top: 15px;
+
+            @include phones {
+                margin-bottom: 24px;
+            }
+        }
+
+        &--fourth {
+            @include phones {
+                margin-bottom: 1px;
+            }
+        }
+
+        @include tablets {
+            margin-left: 0;
+            margin-top: 0;
+            order: 0;
         }
     }
 
@@ -76,10 +119,34 @@
             padding: 0 20px 1px 14px;
             margin-left: 0;
         }
+
+        @include tablets {
+            margin-bottom: 10px;
+        }
     }
 
     &__title {
+        @include tablets {
+            font-size: 54px;
+            line-height: 58px;
+            margin-bottom: 21px;
+        }
+    }
+
+    &__title-wrap {
         margin-bottom: 5px;
+
+        @include tablets {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+
+            @include tablets {
+                display: block;
+            }
+        }
     }
 
     &__text {
@@ -89,5 +156,9 @@
 
     &__btn {
         margin-top: 30px;
+
+        @include phones {
+            margin: 30px auto 0 auto;
+        }
     }
 }

@@ -10,8 +10,20 @@
     }
 }
 
+@mixin tablets-mini {
+    @media (max-width: 660px) {
+        @content;
+    }
+}
+
 @mixin phones {
     @media (max-width: 552px) {
+        @content;
+    }
+}
+
+@mixin phones-mini {
+    @media (max-width: 505px) {
         @content;
     }
 }

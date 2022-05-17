@@ -102,18 +102,24 @@
         </section>
         <section class="roadmap">
             <div class="container roadmap__container">
-                <h2 class="title roadmap__title">ROAD MAP</h2>
+                <h2 class="title roadmap__title">ROAD MAP</h2>
                 <ul class="roadmap__list">
                     <li class="roadmap__item">
                         <div class="roadmap__wrap roadmap__wrap--first">
                             <div class="roadmap-item">
                                 <div class="roadmap-item__pic roadmap-item__pic--first">
+                                    <div class="roadmap-item__title-wrap roadmap-item__title-wrap--mobile">
+                                        <div class="roadmap-item__stage">Stage 1</div>
+                                        <h3 class="title roadmap-item__title">Lacing Up</h3>
+                                    </div>
                                     <img src="./images/road-1.png" alt="step 1" class="roadmap-item__img">
                                 </div>
                                 <div class="roadmap-item__info roadmap-item__info--first">
                                     <div class="roadmap__checkpoint roadmap__checkpoint--start"></div>
-                                    <div class="roadmap-item__stage">Stage 1</div>
-                                    <h3 class="title roadmap-item__title">Lacing Up</h3>
+                                    <div class="roadmap-item__title-wrap">
+                                        <div class="roadmap-item__stage">Stage 1</div>
+                                        <h3 class="title roadmap-item__title">Lacing Up</h3>
+                                    </div>
                                     <p class="roadmap-item__text">
                                         The first stage of our development involves developing a community. We aim to
                                         bring
@@ -136,8 +142,10 @@
                             <div class="roadmap-item">
                                 <div class="roadmap-item__info roadmap-item__info--second">
                                     <div class="roadmap__checkpoint"></div>
-                                    <div class="roadmap-item__stage roadmap-item__stage--second">Stage 2</div>
-                                    <h3 class="title roadmap-item__title">Fresh Kicks</h3>
+                                    <div class="roadmap-item__title-wrap">
+                                        <div class="roadmap-item__stage roadmap-item__stage--second">Stage 2</div>
+                                        <h3 class="title roadmap-item__title">Fresh Kicks</h3>
+                                    </div>
                                     <p class="roadmap-item__text">
                                         As mint day rolls around, we plan to hit the ground running by investing in a
                                         <strong>comprehensive marketing campaign</strong> to get our message out there.
@@ -167,6 +175,10 @@
                                     </p>
                                 </div>
                                 <div class="roadmap-item__pic roadmap-item__pic--second">
+                                    <div class="roadmap-item__title-wrap roadmap-item__title-wrap--mobile">
+                                        <div class="roadmap-item__stage roadmap-item__stage--second">Stage 2</div>
+                                        <h3 class="title roadmap-item__title">Fresh Kicks</h3>
+                                    </div>
                                     <img src="./images/road-2.png" alt="step 2" class="roadmap-item__img">
                                 </div>
                             </div>
@@ -177,8 +189,10 @@
                             <div class="roadmap-item">
                                 <div class="roadmap-item__info roadmap-item__info--third">
                                     <div class="roadmap__checkpoint"></div>
-                                    <div class="roadmap-item__stage roadmap-item__stage--third">Stage 3</div>
-                                    <h3 class="title roadmap-item__title">The Other Foot</h3>
+                                    <div class="roadmap-item__title-wrap">
+                                        <div class="roadmap-item__stage roadmap-item__stage--third">Stage 3</div>
+                                        <h3 class="title roadmap-item__title">The Other Foot</h3>
+                                    </div>
                                     <p class="roadmap-item__text">
                                         Stage 3 will see the release of our <strong>second collection</strong>, which
                                         will
@@ -199,6 +213,10 @@
                                     </p>
                                 </div>
                                 <div class="roadmap-item__pic roadmap-item__pic--third">
+                                    <div class="roadmap-item__title-wrap roadmap-item__title-wrap--mobile">
+                                        <div class="roadmap-item__stage roadmap-item__stage--third">Stage 3</div>
+                                        <h3 class="title roadmap-item__title">The Other Foot</h3>
+                                    </div>
                                     <img src="./images/road-3.png" alt="step 3" class="roadmap-item__img">
                                 </div>
                             </div>
@@ -209,8 +227,10 @@
                             <div class="roadmap-item">
                                 <div class="roadmap-item__info roadmap-item__info--fourth">
                                     <div class="roadmap__checkpoint roadmap__checkpoint--end"></div>
-                                    <div class="roadmap-item__stage roadmap-item__stage--fourth">Stage 4</div>
-                                    <h3 class="title roadmap-item__title">The Future</h3>
+                                    <div class="roadmap-item__title-wrap">
+                                        <div class="roadmap-item__stage roadmap-item__stage--fourth">Stage 4</div>
+                                        <h3 class="title roadmap-item__title">The Future</h3>
+                                    </div>
                                     <p class="roadmap-item__text">
                                         The next stage of our project will <strong>include marketing and
                                             networking</strong>
@@ -230,6 +250,10 @@
                                         on Discord</a>
                                 </div>
                                 <div class="roadmap-item__pic roadmap-item__pic--fourth">
+                                    <div class="roadmap-item__title-wrap roadmap-item__title-wrap--mobile">
+                                        <div class="roadmap-item__stage roadmap-item__stage--fourth">Stage 4</div>
+                                        <h3 class="title roadmap-item__title">The Future</h3>
+                                    </div>
                                     <img src="./images/road-4.png" alt="step 4" class="roadmap-item__img">
                                 </div>
                             </div>
@@ -242,6 +266,7 @@
             <div class="container container--small team__container">
                 <h2 class="title team__title">About the Team</h2>
                 <div class="team__carousel">
+                    <button data-vector="prev" class="team__nav team__nav--left"></button>
                     <ul class="team__list owl-carousel">
                         <li class="team__item">
                             <div class="info-card">
@@ -254,9 +279,12 @@
                                     <p class="info-card__text">
                                         Semyon is our resident marketing specialist, with over 7
                                         years of experience under his belt. He’s
-                                        worked with multi-million dollar budgets, providing top-glass marketing services
+                                        worked with multi-million dollar budgets, providing top-glass marketing
+                                        services
                                         worldwide. He’s
-                                        also a co-owner of a games development company, so he knows a thing or two about
+                                        also a co-owner of a games development company, so he knows a thing or
+                                        two
+                                        about
                                         making
                                         things fun!
                                     </p>
@@ -274,9 +302,12 @@
                                     <p class="info-card__text">
                                         Semyon is our resident marketing specialist, with over 7
                                         years of experience under his belt. He’s
-                                        worked with multi-million dollar budgets, providing top-glass marketing services
+                                        worked with multi-million dollar budgets, providing top-glass marketing
+                                        services
                                         worldwide. He’s
-                                        also a co-owner of a games development company, so he knows a thing or two about
+                                        also a co-owner of a games development company, so he knows a thing or
+                                        two
+                                        about
                                         making
                                         things fun!
                                     </p>
@@ -294,9 +325,12 @@
                                     <p class="info-card__text">
                                         Semyon is our resident marketing specialist, with over 7
                                         years of experience under his belt. He’s
-                                        worked with multi-million dollar budgets, providing top-glass marketing services
+                                        worked with multi-million dollar budgets, providing top-glass marketing
+                                        services
                                         worldwide. He’s
-                                        also a co-owner of a games development company, so he knows a thing or two about
+                                        also a co-owner of a games development company, so he knows a thing or
+                                        two
+                                        about
                                         making
                                         things fun!
                                     </p>
@@ -314,9 +348,12 @@
                                     <p class="info-card__text">
                                         Semyon is our resident marketing specialist, with over 7
                                         years of experience under his belt. He’s
-                                        worked with multi-million dollar budgets, providing top-glass marketing services
+                                        worked with multi-million dollar budgets, providing top-glass marketing
+                                        services
                                         worldwide. He’s
-                                        also a co-owner of a games development company, so he knows a thing or two about
+                                        also a co-owner of a games development company, so he knows a thing or
+                                        two
+                                        about
                                         making
                                         things fun!
                                     </p>
@@ -324,7 +361,6 @@
                             </div>
                         </li>
                     </ul>
-                    <button data-vector="prev" class="team__nav team__nav--left"></button>
                     <button data-vector="next" class="team__nav team__nav--right"></button>
                 </div>
             </div>
