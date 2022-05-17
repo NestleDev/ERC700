@@ -22,23 +22,21 @@
 
     &__wrap {
         display: flex;
+        justify-content: center;
         margin: 0 auto;
         width: 100%;
+        max-width: 1390px;
 
         &--first {
-            max-width: 1275px;
+            margin-bottom: 64px;
         }
 
         &--second {
-            max-width: 1327px;
+            margin-bottom: 46px;
         }
 
         &--third {
-            max-width: 1390px;
-        }
-
-        &--fourth {
-            max-width: 1388px;
+            margin-bottom: 262px;
         }
     }
 
@@ -83,6 +81,10 @@
     &__item {
         position: relative;
         z-index: 1;
+
+        &:last-child {
+            background-color: $bg-color;
+        }
     }
 
     &__checkpoint {
