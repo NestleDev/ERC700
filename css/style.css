@@ -761,20 +761,19 @@ strong {
 }
 .roadmap__wrap {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
-}
-.roadmap__wrap--first {
-  max-width: 1275px;
-}
-.roadmap__wrap--second {
-  max-width: 1327px;
-}
-.roadmap__wrap--third {
   max-width: 1390px;
 }
-.roadmap__wrap--fourth {
-  max-width: 1388px;
+.roadmap__wrap--first {
+  margin-bottom: 64px;
+}
+.roadmap__wrap--second {
+  margin-bottom: 46px;
+}
+.roadmap__wrap--third {
+  margin-bottom: 262px;
 }
 .roadmap__title {
   padding-left: 35px;
@@ -815,6 +814,9 @@ strong {
   position: relative;
   z-index: 1;
 }
+.roadmap__item:last-child {
+  background-color: #000;
+}
 .roadmap__checkpoint {
   display: flex;
   justify-content: center;
@@ -851,40 +853,48 @@ strong {
 }
 
 .roadmap-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 50px;
+  width: 100%;
+}
+.roadmap-item__info {
+  justify-self: end;
 }
 .roadmap-item__info--first {
-  margin-left: 162px;
-  margin-top: 5px;
+  max-width: 571px;
+  justify-self: start;
+  margin-left: 4%;
 }
 .roadmap-item__info--second {
-  max-width: 576px;
-  margin-top: 86px;
-  margin-left: 44px;
+  max-width: 557px;
+  margin-right: 5%;
+  margin-top: 25px;
 }
 .roadmap-item__info--third {
   max-width: 560px;
-  margin-left: 74px;
-  margin-top: 141px;
+  margin-right: 5%;
+  margin-top: 16px;
 }
 .roadmap-item__info--fourth {
   max-width: 516px;
-  margin-top: 290px;
-  margin-left: 73px;
+  margin-right: 11%;
+  margin-top: 28px;
+}
+.roadmap-item__pic {
+  justify-self: start;
 }
 .roadmap-item__pic--first {
-  margin-top: 3px;
+  justify-self: end;
+  margin-right: 12%;
 }
 .roadmap-item__pic--second {
-  margin-left: 131px;
+  margin-left: 3%;
 }
 .roadmap-item__pic--third {
-  margin-left: 111px;
-  padding-top: 142px;
-}
-.roadmap-item__pic--fourth {
-  margin-left: 120px;
-  padding-top: 240px;
+  margin-left: 5%;
+  margin-top: 15px;
 }
 .roadmap-item__stage {
   display: inline-flex;
@@ -918,9 +928,6 @@ strong {
 }
 .roadmap-item__btn {
   margin-top: 30px;
-}
-.roadmap-item--reverse {
-  flex-direction: row-reverse;
 }
 
 .team {
